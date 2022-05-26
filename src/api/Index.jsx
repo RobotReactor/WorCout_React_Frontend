@@ -1,12 +1,13 @@
-import axios from 'axios'
+import React from 'react';
+import axios from 'axios';
 
-export const BASE_URL = 'https://localhost:44304/';
+export const BASE_URL = 'https://localhost:4000/';
 
 export const ENDPOINTS = {
     workouts: 'workouts'
 }
 
-export const createAPIEndpoint = endpoint => {
+function createAPIEndpoint (endpoint) {
 
     let url = BASE_URL + 'api/' + endpoint + '/';
     return {
@@ -17,3 +18,5 @@ export const createAPIEndpoint = endpoint => {
         delete: id => axios.delete(url + id), 
     }
 }
+
+export { createAPIEndpoint };

@@ -102,7 +102,7 @@ function Header() {
                          <i className="fa fa-flask" aria-hidden="true"></i>
                      </div>
                      <div className="top-divider"></div>
-                 </div> 
+                 </div>
                  <h5 className='username-display' style={{fontSize: '14px', margin:'15px', height: '21px', marginTop: '20px'}}>{user.firstName + ' ' + user.lastName}</h5>
                  {/* <div className="user">
                      <img src={require("../def-icon.png")} alt="user_logo"/>

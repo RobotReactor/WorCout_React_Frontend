@@ -66,7 +66,7 @@ function Sidebar() {
             </Link>
             <Link id="itemFAQ" className="list-item" to="/dashboard/FAQ" onClick={onClik}>
                 <div href="/dashboard/FAQ" className="minor-anchor text-decoration-none">
-                    <span className="nav-icon"><i style={{zoom: "1.4", paddingTop: '2px'}} class="fa-solid fa-circle-question"></i></span>
+                    <span className="nav-icon"><i style={{zoom: "1.4", paddingTop: '2px'}} className="fa-solid fa-circle-question"></i></span>
                     <span className="minor-title text-decoration-none">FAQ Page</span>
                 </div>
             </Link>

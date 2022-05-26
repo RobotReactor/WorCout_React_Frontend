@@ -4,11 +4,35 @@
     padding: 0px;
     overflow-x: hidden;
     overflow-y: hidden;
-    /* outline: 2px solid rgb(9, 255, 0); */
+    /* outline: 2px solid rgb(250, 150, 57); */
     --background-color: rgb(207, 207, 207);
 }
+
 .main {
+    /* outline: 2px solid rgb(250, 150, 57); */
     background-color: rgb(207, 207, 207);
+}
+
+.title {
+    margin-bottom: 10px;
+    text-align: center;
+    width: 210px;
+    color: green;
+    border: solid black 2px;
+}
+
+input[type="button"] {
+    --color: rgb(56, 91, 209);
+    --background-color: rgb(207, 207, 207);
+    border: solid black 2px;
+    width: 100%
+}
+
+input[type="text"] {
+    --color:rgb(56, 91, 209);
+    --background-color: rgb(207, 207, 207);
+    border: solid black 2px;
+    width: 100%
 }
 
 .top-dock {

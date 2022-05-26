@@ -2,10 +2,10 @@ import React from 'react';
 import { createAPIEndpoint, ENDPOINTS } from '@/api';
 import { MainScreen } from '@/mainscreen';
 
-const examplePress = () => {
+function examplePress() {
     console.log("Press");
     createAPIEndpoint(ENDPOINTS.workouts)
-        .delete(7)
+        .delete(1);
 }
 
 function LogWorkout() {
@@ -13,7 +13,7 @@ function LogWorkout() {
     return (
 
     <MainScreen>
-        <button>Button: Press ME!</button>
+        <button onClick={examplePress}>Button: Press ME!</button>
     </MainScreen>
 
     )

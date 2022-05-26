@@ -79,7 +79,7 @@ function Calculator()  {
                         <thead>
                             <td><input type="button" value="." onclick="dis('.')" /> </td>
                             <td><input type="button" value="0" onclick="dis('0')" /> </td>
-                            <td><input type="button" value="=" onclick="solve()" /> </td>
+                            <td><input type="button" value="=" onclick="solve()" />  </td>
                             <td><input type="button" value="*" onclick="dis('*')" /> </td>
                         </thead>
                     </table>
@@ -94,36 +94,54 @@ function Calculator()  {
                     <Modal.Header style={{ marginLeft: 'auto', marginRight: 'auto'}}>
                         <Modal.Title style={{marginTop: '10px', fontSize: '12px'}}>Diet Options:</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>
+                    <Modal.Body style={{ marginLeft: 'auto', marginRight: 'auto'}}>
                    {} {user.id === 2 ? (
                    <>
-                        <h3 style={{ marginLeft: 'auto', marginRight: 'auto'}}>Breakfast:</h3>
+                        <h3>Breakfast:</h3>
                             <img src="public/images/fruitsmoothie.png" width="150" height="150"/>
+                            <p>240cals</p>
                             <img src="public/images/OETB.png" width="150" height="150" />
+                            <p>340cals</p>
                             <img src="public/images/Proteincereal.png"  width="150" height="150" /> 
+                            <p>160cals</p>
                         <h3 style={{ marginLeft: 'auto', marginRight: 'auto'}}>Lunch:</h3>
                             <img src="public/images/salad.png" width="150" height="150"/>
+                            <p>20cals</p>
                             <img src="public/images/TilapiaAsparagus.png" width="150" height="150"/>
+                            <p>130cals</p>
                             <img src="public/images/chickenbreast.png" width="150" height="150"/>
+                            <p>268cals</p>
                         <h3 style={{ marginLeft: 'auto', marginRight: 'auto'}}>Dinner:</h3>
                             <img src="public/images/chickenbroccoli.png" width="150" height="150"/>
+                            <p>180cals</p>
                             <img src="public/images/SteakRice.png" width="150" height="150"/>
+                            <p>319cals</p>
                             <img src="public/images/salmonasparagus.png" width="150" height="150"/>
+                            <p>200cals</p>
                         <h3 style={{ marginLeft: 'auto', marginRight: 'auto'}}>Total Calories: 2600</h3> 
                     </>  ) : 
                     <>
                         <h3 style={{ marginLeft: 'auto', marginRight: 'auto'}}>Breakfast:</h3>
                             <img src="public/images/pancakes.jpg" width="150" height="150"/>
+                            <p>420cals</p>
                             <img src="public/images/quesadilla.jpg" width="150" height="150" />
+                            <p>300cals</p>
                             <img src="public/images/burrito.jpg"  width="150" height="150" /> 
+                            <p>250cals</p>
                         <h3 style={{ marginLeft: 'auto', marginRight: 'auto'}}>Lunch:</h3>
                             <img src="public/images/bigmac.jpg" width="150" height="150"/>
+                            <p>540cals</p>
                             <img src="public/images/taco.jpg" width="150" height="150"/>
+                            <p>310cals</p>
                             <img src="public/images/pizza.jpg" width="150" height="150"/>
+                            <p>260cals per slice</p>
                         <h3 style={{ marginLeft: 'auto', marginRight: 'auto'}}>Dinner:</h3>
                             <img src="public/images/lobster.jpg" width="150" height="150"/>
+                            <p>340cals</p>
                             <img src="public/images/ricebowl.jpg" width="150" height="150"/>
+                            <p>319cals</p>
                             <img src="public/images/fishy.jpg" width="150" height="150"/>
+                            <p>260cals</p>
                         <h3 style={{ marginLeft: 'auto', marginRight: 'auto'}}>Total Calories: 5100</h3> 
                     </> }
                     </Modal.Body>

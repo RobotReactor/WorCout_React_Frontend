@@ -7,7 +7,7 @@ import { MediumContainer } from '@/mdcontainer';
 import { LargeContainer } from '@/lgcontainer';
 import { SmallSection } from '@/smsection';
 import { LargeSection } from '@/lgsection';
-
+import { ChartThing } from '@/charts';
 
 function DashHome({ history }) {
 
@@ -17,24 +17,35 @@ function DashHome({ history }) {
             history.push('/');
         }
     }, []);
-
+    
   return (
     <MainScreen>
-         <MediumContainer>
-            <SmallSection></SmallSection>
-        </MediumContainer>
         <LargeContainer>
-            <LargeSection></LargeSection>
-            <LargeSection></LargeSection>
+            <LargeSection>
+                <ChartThing></ChartThing>
+            </LargeSection>
+            <SmallSection>
+            </SmallSection>
         </LargeContainer>
         <SmallContainer>
-            <LargeSection></LargeSection>
+            <LargeSection>
+            </LargeSection>
             <SmallSection></SmallSection>
-            <SmallSection></SmallSection>
+            <SmallSection>
+            </SmallSection>
         </SmallContainer> 
         <SmallContainer>
             <LargeSection></LargeSection>
         </SmallContainer>
+        <MediumContainer>
+            <LargeSection>
+            {/* <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJOyJeUjnPJIgR3zYCsZQJxN0&key=AIzaSyC6HtVgOE6ptpcNH_qcJfphWCF93TN5OgM%22%3E"></iframe> */}
+            </LargeSection>
+            <LargeSection>
+            </LargeSection>
+            <LargeSection>
+            </LargeSection>
+        </MediumContainer>
     </MainScreen>
   )
 }

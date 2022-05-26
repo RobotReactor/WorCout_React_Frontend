@@ -2,6 +2,7 @@ import React from 'react';
 import { createAPIEndpoint, ENDPOINTS } from '@/api';
 import { MainScreen } from '@/mainscreen';
 
+
 function examplePress() {
     console.log("Press");
     createAPIEndpoint(ENDPOINTS.workouts)
@@ -13,7 +14,6 @@ function LogWorkout() {
     return (
 
     <MainScreen>
-        <button onClick={examplePress}>Button: Press ME!</button>
     </MainScreen>
 
     )
